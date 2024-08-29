@@ -29,29 +29,29 @@ else :
 
 gender = str(input("please type in your gender(M/F): ")).upper()
 haemoglobin_level = float(input("please type in your haemoglobin level: "))
+
 if gender == 'M'and haemoglobin_level <= 134 :
-    print ("haemoglobin is low")
-elif gender == 'M'and 134 < haemoglobin_level < 167:
-    print("haemoglobin is normal")
+        print ("haemoglobin is low")
+elif gender == 'M'and 134 <= haemoglobin_level <= 167:
+        print("haemoglobin is normal")
 elif gender == 'M' and haemoglobin_level > 167 :
-    print("haemoglobin is high")
+        print("haemoglobin is high")
 else:
     if gender == 'F'and haemoglobin_level <= 117:
         print("haemoglobin is low")
-    if gender == 'F'and 117 < haemoglobin_level < 155:
+    elif gender == 'F'and 117 <= haemoglobin_level <= 155:
         print("haemoglobin is normal")
-    if gender == 'F'and haemoglobin_level > 155 :
+    elif gender == 'F'and haemoglobin_level > 155 :
          print("haemoglobin is high")
-
 
 
 
 ####################4
 
-year  = int(input("please type in your YEAR: "))
+year = int(input("please type in your YEAR: "))
 if year % 4 == 0 and year %100 != 0:
-        print("its a leap year")
+        print(f"year : {year} is a leap year")
 elif year % 400 == 0:
-        print("its a leap year")
+        print(f"year : {year} is a leap year")
 else:
-    print("its not a leap year")
+    print(f"year: {year} not a leap year")
